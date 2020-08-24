@@ -328,7 +328,7 @@ footer ul li{
 }
 
 .banner-help input {
-	width: 800px;
+	width: 500px;
 }
 
 .banner-help h3{
@@ -442,8 +442,8 @@ footer ul li{
 }
 
 .banner-download .laptop {
-	max-width: 250px;
-	margin-left: 100px;
+	max-width: 50%;
+	margin-left: 50%;
 }
 
 /*------bring Downolad-------*/
@@ -548,7 +548,7 @@ footer ul li{
     border-color: initial;
     border-image: initial;
     border-radius: 500px;
-    padding: 17px 48px;
+    padding: 17px 20px;
 }
 
 .container-form .form-check .form-config,
@@ -639,12 +639,11 @@ footer ul li{
 
 .container-form .form-check-label {
 	color: rgb(24, 24, 24);
-    padding-left: 12px;
-	padding-right: 24px;
-	font-size: 14px;
+    padding-left: 0;
+	padding-right: 0;
+	font-size: 12px;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0.25px;
 }
 
 .buttonSignUp {
@@ -773,13 +772,11 @@ footer ul li{
 
 
 .btn-login-green {
-	padding: 16px 14px 18px;
 	color: #fff;
 	background-color: #1db954;
 	font-size: 14px;
     line-height: 1;
     border-radius: 500px;
-    padding: 16px 48px 18px;
     transition-property: background-color,border-color,color,box-shadow,filter;
     transition-duration: .3s;
     border-width: 0;
@@ -788,11 +785,18 @@ footer ul li{
     text-transform: uppercase;
 	white-space: normal;
 	display: block;
-	width: 100%;
 	cursor: pointer;
-	font-weight: 700;
+	font-weight: 500;
+	margin-left: 0;
 }
 
+.container .d-flex {
+	padding: 0;
+}
+
+label .form-check-label {
+	padding: 0;
+}
 
 /*---------------Media Queries-----------------------*/
 
@@ -845,22 +849,12 @@ footer ul li{
 		font-size: 38px;
 	}
 
-
-	.banner-help input {
-		width: 300px;
-	}
-
 	.banner-help h3{
 		display: flex;
 		align-self: start;
 	}
 	
 	.banner-help p{
-		display: flex;
-		align-self: start;
-	}
-
-	.banner-help h3{
 		display: flex;
 		align-self: start;
 	}
@@ -872,15 +866,21 @@ footer ul li{
 		padding: 0 0 0 0;
 	}
 
+	.banner-help input {
+		width: 100%;
+	}
+
 	/*-------Download----------*/
 
 	.banner-download h1 {
-		font-size: 38px;
+		padding-top: 10%;
+		font-size: 23px;
+		line-height: 100%;
 	}
 
 	.banner-download .laptop {
 		max-width: 50%;
-		margin-left: 30%;
+		margin-left: 0;
 	}
 
 	/*-------signUp----------*/
@@ -889,13 +889,29 @@ footer ul li{
 		padding-left: 0;
 	}
 
-	/*-------signUp----------*/
+	/*-------Login----------*/
 	.logo-login {
 		max-width: 50%;
 		margin-left: 20%;
 	}
 
-}
+
+	.container-form i {
+		padding-right: 0.5rem;
+	}
+
+	.container-form .btn-login {
+		padding: 16px 0 18px;
+	}
+
+	.container .d-flex {
+		padding: 0;
+	}
+
+	.btn-login-green {
+		min-width: 120px;
+	}
+	
 
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -934,20 +950,29 @@ footer ul li{
 	}
 
 	.banner-help input {
-		width: 500px;
+		width: 100%;
 	}
 
 	/*-------Download----------*/
 
-	.banner-download .laptop {
-		max-width: 40%;
-		margin-left: 50%;
-	}
+	/* .banner-download .laptop {
+		max-width: 50%;
+		margin-left: 0;
+	} */
 
 
 	ul.d-flex.size-md {
 		margin-left: 100%;
 	}
+
+	/* .banner-download h1 {
+		padding-top: 10%;
+		font-size: 23px;
+		line-height: 100%;
+	} */
+
+
+
 
 	/*-------signUp----------*/
 	.logo-login {
@@ -955,6 +980,7 @@ footer ul li{
 		margin-left: 25%;
 	}
 
+	
 
 }
 
@@ -984,14 +1010,10 @@ footer ul li{
 		margin-right: 20%;
 	}
 
-	/*-------Help------------*/
-	.banner-help input {
-		width: 500px;
-	}
-
 	/*-------Download----------*/
 	.banner-download .laptop {
-		margin-left: 0;
+		max-width: 50%;
+		margin-left: 20%;
 	}
 
 	ul.d-flex.size-md {
@@ -1031,10 +1053,9 @@ footer ul li{
 		margin-right: 20%;
 	}
 
-
 	/*-------Download----------*/
 	.banner-download .laptop {
-		margin-left: 0;
+		margin-left: 20%;
 	}
 
 	ul.d-flex.size-md {
@@ -1058,6 +1079,5 @@ footer ul li{
 	.btn-custom {
 		margin: 10px 15px;
 	}
-
 
 }
